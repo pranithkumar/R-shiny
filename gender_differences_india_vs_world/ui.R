@@ -1,17 +1,18 @@
+library(plotly)
 shinyUI(fluidPage(
   
-  titlePanel("Gender gap"),
+  titlePanel("Gender Differences"),
   
   sidebarLayout(
-    sidebarPanel("genderwise differences in India compared to World",
+    sidebarPanel("Genderwise differences in India compared to World",
                  selectInput("gender.select", label = h3("Select gender"), 
-                             choices = list("Male", "Female", "Both")),
+                             choices = list("Male"=1, "Female"=2, "Both"=3)),
                  selectInput("country.select", label = h3("Select countries"), 
-                             choices = list("India", "World", "Both"))
+                             choices = list("India"=1, "World"=2, "Both"=3))
     ),
     
     mainPanel(
-       plotOutput("barPlot")
+       plotlyOutput("barPlot")
     )
   )
 ))

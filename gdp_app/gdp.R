@@ -1,3 +1,4 @@
+library(plotly)
 get.year <- function(yr){
   for (i in countries_freq$Var1){
     if(yr==i){

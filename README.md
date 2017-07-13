@@ -1,4 +1,5 @@
 # R-shiny <br>
+link for r-shiny tutorials : https://shiny.rstudio.com/tutorial/ <br>
 The above shiny apps have been deployed in shinyapps.io ,<br>
 follow the links to view them : <br>
 gender_differences_india_vs_world : https://pranithkumar.shinyapps.io/gender/ <br>
